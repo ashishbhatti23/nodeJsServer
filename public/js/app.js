@@ -1,6 +1,6 @@
 console.log("hello");
 var url = "http://api.weatherstack.com/current?access_key=c1733a2a91f7899e532aff83da16e70b&query="+'boston';
-url ='http://localhost:3000/products?location=';
+url ='products?location=';
 fetchdata=(event)=>{
 event.preventDefault();
 var location = document.getElementById('location').value;

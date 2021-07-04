@@ -4,7 +4,7 @@ var hbs = require('hbs');
 var request = require('request');
 
 const app =express();
-
+const port = process.env.PORT || 3000;
 const directoryPath = path.join(__dirname,'../public');
 const viewsPath = path.join(__dirname,'../templates/views');
 const partialsPath = path.join(__dirname,'../templates/partials');
@@ -72,4 +72,4 @@ resp.render('404Page',{
 })
 
 
-app.listen(3000,()=>{console.log("Started server")})
+app.listen(port,()=>{console.log("Started server")})
